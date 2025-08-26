@@ -349,7 +349,7 @@ function ContactEmail() {
         contact@the-itts.com
       </a>
       <a href="tel:+1234567890" className="text-purple-400 hover:text-purple-300 block mt-1">
-    +964 750 197 5006
+    +971 56 570 7216
   </a>
     </div>
   )
