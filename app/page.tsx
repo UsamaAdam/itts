@@ -199,6 +199,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Partner Section */}
+      <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div className="container px-4 mx-auto">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#1a488e] to-[#97b2de]">
+                Our Partner
+              </span>
+            </h2>
+            <div className="max-w-4xl mx-auto text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-[#1a488e] transition-colors duration-300"
+              >
+                <h3 className="text-2xl font-bold text-white mb-4">PC deltanet</h3>
+                <p className="text-gray-300 mb-6 leading-relaxed">
+                  We are proud to partner with PC deltanet, a leading technology solutions provider.
+                  This strategic partnership enables us to deliver enhanced services and innovative
+                  solutions to our clients, combining our expertise with their cutting-edge technology
+                  infrastructure.
+                </p>
+                <a
+                  href="https://www.pcdealnet.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#1a488e] to-[#97b2de] text-white font-medium rounded-lg hover:from-[#0f2d5a] hover:to-[#7a9bc7] transition-all duration-300 transform hover:scale-105"
+                >
+                  Visit PC deltanet
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-black">
         <div className="container px-4 mx-auto">
